@@ -18,11 +18,11 @@ puts rand
 puts rand(1)
 puts rand(1)
 puts rand(100)
-puts rand(100)
+puts rand(10000)
 puts rand(5)
 puts rand(6)
 puts rand(100.0)
-
+puts ""
 srand 30
 puts rand(100)
 puts rand(100)
