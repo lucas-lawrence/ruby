@@ -3,13 +3,13 @@ def hundred number
   tenth = ["","ten ", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"]
   teen = ["","eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
 
-  if number%100<11 or number%100>20 and number%10!=0 or number==0
+  if number%100<10 or number%100>20 and number%10!=0 or number==0
     num = unit[number%10]
   else
     num = teen[number%10]
   end
 
-  if number%100>=20
+  if number%100>=20 or number%100==10
     num = num +" "+ tenth[number/10%10]
     num = num.split.reverse.join("-")
   end
