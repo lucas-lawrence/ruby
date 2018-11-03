@@ -47,11 +47,19 @@ while count<2
 		else
 			puts "NO, NOT SINCE #{1930+rand(21)}!"
 		end
+		count=0
 	else
 		count+=1
 	end
 	listen=gets.chomp
 end
+
+=begin
+we can use loop do ... end
+for a in 1..300
+next if ...
+break if ...
+=end
 
 #Leap Year
 puts ""
