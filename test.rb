@@ -34,3 +34,16 @@ puts rand(100)
 puts rand(100)
 puts rand(100)
 puts rand(100)
+
+#Deaf Grandma
+puts ""
+listen=gets.chomp
+
+while listen!="BYE"
+	if listen!=listen.upcase
+		puts "HUH?! SPEAK UP, SONNY!"
+	else
+		puts "NO, NOT SINCE #{1930+rand(21)}!"
+	end
+	listen=gets.chomp
+end
