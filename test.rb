@@ -40,7 +40,7 @@ puts ""
 listen=gets.chomp
 count=0
 
-while count<3
+while count<2
 	if listen!="BYE"
 		if listen!=listen.upcase
 			puts "HUH?! SPEAK UP, SONNY!"
@@ -51,4 +51,18 @@ while count<3
 		count+=1
 	end
 	listen=gets.chomp
+end
+
+#Leap Year
+puts ""
+puts "Enter a starting year"
+start=gets.chomp.to_i
+puts "Enter a ending year"
+endyear=gets.chomp.to_i
+
+while start<=endyear
+	if (start%4==0  and (start%100!=0 or start%400==0))
+		puts "#{start} is a leap year"
+	end
+	start+=4-start%4
 end
