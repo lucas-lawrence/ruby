@@ -38,12 +38,17 @@ puts rand(100)
 #Deaf Grandma
 puts ""
 listen=gets.chomp
+count=0
 
-while listen!="BYE"
-	if listen!=listen.upcase
-		puts "HUH?! SPEAK UP, SONNY!"
+while count<3
+	if listen!="BYE"
+		if listen!=listen.upcase
+			puts "HUH?! SPEAK UP, SONNY!"
+		else
+			puts "NO, NOT SINCE #{1930+rand(21)}!"
+		end
 	else
-		puts "NO, NOT SINCE #{1930+rand(21)}!"
+		count+=1
 	end
 	listen=gets.chomp
 end
